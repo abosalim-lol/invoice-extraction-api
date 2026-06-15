@@ -1,5 +1,5 @@
 from fastapi import Request, HTTPException, status
-from app.config import ALLOWED_API_KEYS
+from config import ALLOWED_API_KEYS
 
 async def verify_api_key(request: Request):
     api_key = request.headers.get("x-api-key")

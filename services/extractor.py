@@ -1,6 +1,6 @@
 from openai import OpenAI
-from app.config import settings
-from app.schemas.invoice import InvoiceData
+from config import settings
+from schemas.invoice import InvoiceData
 from fastapi import HTTPException
 
 # Point the OpenAI client to Groq's API endpoint

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, Depends, HTTPException
-from app.middleware.api_key import verify_api_key
-from app.utils.files import validate_file, save_to_temp, cleanup_temp_file
-from app.services.ocr import extract_text_from_file
-from app.services.extractor import extract_invoice_data
+from middleware.api_key import verify_api_key
+from utils.files import validate_file, save_to_temp, cleanup_temp_file
+from services.ocr import extract_text_from_file
+from services.extractor import extract_invoice_data
 
 router = APIRouter()
 

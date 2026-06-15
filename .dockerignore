@@ -1,0 +1,25 @@
+# Environment variables (NEVER put these in the image)
+.env
+.env.local
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Git
+.git/
+.gitignore
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Test files and docs (optional, keeps image smaller)
+README.md

@@ -1,0 +1,20 @@
+# Invoice Extraction API (MVP)
+
+A simple, fast, and low-cost Invoice Extraction API for solo founders. It accepts PDF, JPG, or PNG files, runs OCR, and uses OpenAI to extract structured JSON data.
+
+## Features
+- Supports PDF, JPG, PNG
+- Extracts: Invoice Number, Date, Vendor, Customer, Currency, Subtotal, Tax, Total
+- Simple API Key authentication
+- Zero database, zero complex infrastructure
+- Docker-ready for Railway / Render
+
+## Local Development
+
+1. **Clone and setup**:
+   ```bash
+   git clone <repo>
+   cd invoice-extraction-api
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
